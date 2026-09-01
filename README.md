@@ -1,6 +1,6 @@
 # Waller Wallpaper Overlay
 
-Fuck MDM and wallpaper restrictions. Just let me set my own Background.
+Fuck MDM and wallpaper restrictions. Just let me set my own wallpaper y'all ✌️.
 
 ## Method 1: Quick Download (.zip)
 1. Download the latest `.zip` file from the **Releases** tab and extract it.
