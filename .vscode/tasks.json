@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Wallpaper App Bundle",
+            "type": "process",
+            "command": "/bin/mkdir",
+            "args": [
+                "-p",
+                "MyWallpaper.app/Contents/MacOS"
+            ],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared",
+                "clear": true
+            }
+        },
+        {
+            "label": "compile",
+            "dependsOn": "Build Wallpaper App Bundle",
+            "type": "process",
+            "command": "/usr/bin/swiftc",
+            "args": [
+                "main.swift",
+                "-o",
+                "MyWallpaper.app/Contents/MacOS/MyWallpaper"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
